@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(./Font/Gilroy/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./Font/Gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: Mazius;
+  src: url(./Font/Maziuz/MAZIUSREVIEW20.09-Extraitalic.otf);
+}
+
+:root {
+  --Gilroy-FF: Gilroy;
+  --Mazius-FF: Mazius;
+  --border-color: #adadad;
+  --accent-color: #14cf93;
+  --black: #161616;
+  --tomato: #ff6347;
+  --background: #fcfaf8;
+  --text-white: #ffffff;
+  --para-color: #414141;
+  --hr-color: rgba(65, 65, 65, 0.3);
+  --secondary-bg: #f2f2f2;
+  --small-title-color: #43283a;
+  --title-color: #383838;
+  --easing: cubic-bezier(0, 0.89, 0.41, 1);
+  --side-margin: 5vw;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.452rem;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--Gilroy-FF);
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px  */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 94%;
+  font-family: var(--Gilroy-FF);
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.o-title-small {
+  display: block;
+  font-size: 12px;
+  color: #a2a2a2;
+  font-family: gilroy, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.o-accent {
+  font-family: mazius, sans-serif;
+}
+
+.c-t-a-info {
+  display: flex;
+  padding-top: 5vh;
+}
+.c-t-a-info p:first-child {
+  margin-right: 10vw;
+}
+h1 .o-accent,
+h2 .o-accent,
+h3 .o-accent {
+  color: #14cf93;
+}
+
+a,
+button[type='submit'],
+label,
+p {
+  font-family: var(--Gilroy-FF);
+  text-transform: uppercase;
+  line-height: 121%;
+}
+a {
+  font-size: 12px;
+  color: #383838;
+}
+hr {
+  border: none;
+  height: 1px;
+}
+
+.line-parent {
+  overflow: hidden;
+  display: block;
+}
+.line-child {
+  display: block;
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+}
+
+.main {
+  width: 100%;
+}
