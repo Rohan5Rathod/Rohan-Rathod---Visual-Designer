@@ -1,7 +1,7 @@
 @import url(./uilities.css);
 
 .c-loader {
-  /* display: none; */
+  display: none;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -16,7 +16,7 @@
 }
 
 .c-loaderr {
-  /* display: none; */
+  display: none;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -56,6 +56,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 .c-loader h2 > span {
@@ -122,15 +123,11 @@ nav a:hover:before {
   position: relative;
   background-color: var(--background);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 24vh 0 22vh;
   z-index: 0;
 }
 
-.container {
-  max-width: 89.9%;
-  margin: 0 auto;
-}
 
 .c-title__row h2 {
   font-size: 20.2rem;
@@ -165,3 +162,72 @@ nav a:hover:before {
 .c-title__row #Visual polyline {
   stroke: #14cf93;
 }
+
+/* ABOUT SECTION  */
+.c-about{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.c-about .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-about p{
+  font-size: 3.87999rem;
+  text-transform: uppercase;
+  width: 26%;
+  line-height: 3.699rem;
+  color: var(--para-color);
+}
+
+.c-about p .u-non {
+  text-transform: capitalize;
+  color: #14cf93;
+}
+
+.c-about-cards {
+  width: 42%;
+  flex-basis: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.c-about-cards > div {
+  width: 75%;
+  overflow: hidden;
+  border-collapse: separate;
+  border-radius: 30px;
+}
+.c-about-cards > div img {
+  width: 105%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  filter: saturate(0);
+  transition: 0.4s;
+}
+.c-about-cards > div:hover img {
+  filter: saturate(1);
+}
+.c-about-cards > div:first-child {
+  top: -15%;
+  left: 0;
+  position: absolute;
+  transform: rotate(-6deg);
+}
+.c-about-cards > div:nth-child(2) {
+  position: relative;
+  z-index: 2;
+  transform: translate(16.6%);
+}
+.c-about-cards > div:nth-child(3) {
+  top: 15%;
+  right: 0;
+  position: absolute;
+  transform: rotate(5deg);
+  z-index: 3;
+}
+

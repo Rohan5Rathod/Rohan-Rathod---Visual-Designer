@@ -47,14 +47,11 @@ a {
 
 body,
 html {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 
-body {
-  overflow: hidden;
-}
 
 html {
   font-size: 62.5%;
@@ -112,6 +109,11 @@ a {
 hr {
   border: none;
   height: 1px;
+}
+
+.container {
+  max-width: 89.9%;
+  margin: 0 auto;
 }
 
 .line-parent {
