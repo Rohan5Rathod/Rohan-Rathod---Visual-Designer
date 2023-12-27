@@ -24,34 +24,22 @@
   --para-color: #414141;
   --hr-color: rgba(65, 65, 65, 0.3);
   --secondary-bg: #f2f2f2;
-  --small-title-color: #43283a;
+  --small-title-color: #a2a2a2;
   --title-color: #383838;
   --easing: cubic-bezier(0, 0.89, 0.41, 1);
   --side-margin: 5vw;
 }
 
-a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  line-height: 1.452rem;
-  text-transform: uppercase;
-  color: var(--title-color);
-}
-
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: var(--Gilroy-FF);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body,
-html {
-  width: 100vw;
-  overflow-x: hidden;
-  text-rendering: optimizeLegibility;
+body, html {
+    width: 100%;
+    height: 100%;
 }
-
 
 html {
   font-size: 62.5%;
@@ -64,29 +52,45 @@ h3,
 h4,
 h5 {
   line-height: 94%;
-  font-family: var(--Gilroy-FF);
+  font-family:var(--Gilroy-FF);
   font-weight: 400;
   color: var(--title-color);
 }
-
-.o-title-small {
-  display: block;
-  font-size: 12px;
-  color: #a2a2a2;
-  font-family: gilroy, sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 25px;
+a{
+  text-decoration: none;
+  font-family: var(--Gilroy-FF);
+  line-height: 121%;
+  color:var(--title-color);
 }
+.o-title {
+  font-size: 14rem;
+  letter-spacing: -2px;
+}
+.c-title__row h2{
+  font-size: 20.2rem;
+  letter-spacing: -4px;
+}
+.c-about p{
+  font-size: 3.37rem;
+  line-height: 3.2rem;
+}
+.c-services p{
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+p{
+  font-family: var(--Gilroy-FF);
+  line-height: 121%;
+  color: var(--para-color);
+}
+
+.u-non{
+  color: var(--accent-color);
+}
+
 .o-accent {
   font-family: mazius, sans-serif;
-}
-
-.c-t-a-info {
-  display: flex;
-  padding-top: 5vh;
-}
-.c-t-a-info p:first-child {
-  margin-right: 10vw;
 }
 h1 .o-accent,
 h2 .o-accent,
@@ -94,38 +98,15 @@ h3 .o-accent {
   color: #14cf93;
 }
 
-a,
-button[type='submit'],
-label,
-p {
-  font-family: var(--Gilroy-FF);
+.o-title-small{
+  display: block;
+  font-size: 1rem;
+  color:var(--small-title-color);
   text-transform: uppercase;
-  line-height: 121%;
-}
-a {
-  font-size: 12px;
-  color: #383838;
-}
-hr {
-  border: none;
-  height: 1px;
+  margin-bottom: 25px;
+  width: 26vw;
 }
 
-.container {
-  max-width: 89.9%;
-  margin: 0 auto;
-}
+.main{
 
-.line-parent {
-  overflow: hidden;
-  display: block;
-}
-.line-child {
-  display: block;
-  transform-origin: center bottom;
-  transform-style: preserve-3d;
-}
-
-.main {
-  width: 100%;
 }

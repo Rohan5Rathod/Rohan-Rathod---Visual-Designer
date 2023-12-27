@@ -1,91 +1,27 @@
 @import url(./uilities.css);
-
-.c-loader {
-  display: none;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  pointer-events: none;
-  color: #fff;
-  background-color: var(--black);
-  z-index: 2;
-  /* transition: 1.6s; */
-  /* transition-timing-function: cubic-bezier(0, 0.89, 0.41, 1); */
-  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-.c-loaderr {
-  display: none;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  top: 100%;
-  background-color: var(--tomato);
-  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-.c-loader:nth-child(2) {
-  position: absolute;
-  transform-origin: top;
-  width: 100%;
-  height: 100vh;
-  top: 100%;
-  background-color: var(--tomato);
-  z-index: 1;
-  transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-.c-loader p {
-  font-size: 1.2rem;
-  transform: translate(-50%);
-  position: absolute;
-  left: 50%;
-}
-
-.c-loader p:first-child {
-  top: 5vh;
-}
-.c-loader p:last-child {
-  bottom: 5vh;
-}
-
-.c-loader h2 {
-  font-size: 6rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
-
-.c-loader h2 > span {
-  display: block;
-  overflow-y: hidden;
-}
-
-.c-loader h2 > span span {
-  display: inline-block;
-}
-
-/* NAVBAR  */
+@import url(./responsive.css);
 
 nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   position: fixed;
-  top: 6.5vh;
+  width: 100%;
+  top: 5vh;
   padding: 0 7vw;
-  z-index: 1;
+  z-index: 10;
 }
 
 nav a {
+  font-size: 1.2rem;
+  line-height: 1.42rem;
+  text-transform: uppercase;
+  font-weight: 500;
   color: inherit;
   position: relative;
   text-decoration: none;
   pointer-events: all;
 }
+
 nav a:after,
 nav a:before {
   content: '';
@@ -94,9 +30,8 @@ nav a:before {
   bottom: 0;
   width: 100%;
   background-color: #4e4e4e;
-  height: 1px;
-  transition: 0.8s;
-  transition-timing-function: cubic-bezier(0, 0.89, 0.41, 1);
+  height: 1.2px;
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 nav a:after {
   right: 0;
@@ -116,118 +51,3 @@ nav a:hover:before {
   transform: scale(1);
   transition-delay: 0;
 }
-
-/* NAVBAR  */
-
-.c-title {
-  position: relative;
-  background-color: var(--background);
-  width: 100%;
-  min-height: 100vh;
-  padding: 24vh 0 22vh;
-  z-index: 0;
-}
-
-
-.c-title__row h2 {
-  font-size: 20.2rem;
-  letter-spacing: -4px;
-  overflow-y: hidden;
-}
-.c-title__row:nth-child(2) h2 {
-  line-height: 1.2;
-}
-
-.c-title__row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.c-title__svg {
-  width: 42%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-.c-title__svg .c-down-btn {
-  width: 4.2vw;
-  margin: 2rem 0;
-}
-.c-title__svg svg {
-  width: 376px;
-  margin: 2rem 0;
-}
-
-.c-title__row #Visual path,
-.c-title__row #Visual polyline {
-  stroke: #14cf93;
-}
-
-/* ABOUT SECTION  */
-.c-about{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-}
-
-.c-about .container{
-  display: flex;
-  justify-content: space-between;
-}
-
-.c-about p{
-  font-size: 3.87999rem;
-  text-transform: uppercase;
-  width: 26%;
-  line-height: 3.699rem;
-  color: var(--para-color);
-}
-
-.c-about p .u-non {
-  text-transform: capitalize;
-  color: #14cf93;
-}
-
-.c-about-cards {
-  width: 42%;
-  flex-basis: 50%;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-.c-about-cards > div {
-  width: 75%;
-  overflow: hidden;
-  border-collapse: separate;
-  border-radius: 30px;
-}
-.c-about-cards > div img {
-  width: 105%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  filter: saturate(0);
-  transition: 0.4s;
-}
-.c-about-cards > div:hover img {
-  filter: saturate(1);
-}
-.c-about-cards > div:first-child {
-  top: -15%;
-  left: 0;
-  position: absolute;
-  transform: rotate(-6deg);
-}
-.c-about-cards > div:nth-child(2) {
-  position: relative;
-  z-index: 2;
-  transform: translate(16.6%);
-}
-.c-about-cards > div:nth-child(3) {
-  top: 15%;
-  right: 0;
-  position: absolute;
-  transform: rotate(5deg);
-  z-index: 3;
-}
-
