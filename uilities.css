@@ -37,13 +37,21 @@
 }
 
 body, html {
-    width: 100%;
-    height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* text-rendering: optimizeLegibility; */
 }
 
 html {
   font-size: 62.5%;
   /* 1rem = 10px  */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -73,10 +81,15 @@ a{
 .c-about p{
   font-size: 3.37rem;
   line-height: 3.2rem;
+  text-transform: uppercase;
 }
 .c-services p{
   font-size: 2rem;
   line-height: 2.2rem;
+}
+
+.c-honors {
+  padding: 20vh 0 18vh;
 }
 
 p{
@@ -86,6 +99,7 @@ p{
 }
 
 .u-non{
+  text-transform: capitalize;
   color: var(--accent-color);
 }
 
@@ -98,15 +112,28 @@ h3 .o-accent {
   color: #14cf93;
 }
 
+main {
+  position: relative;
+  overflow: hidden;
+}
+
 .o-title-small{
   display: block;
   font-size: 1rem;
   color:var(--small-title-color);
   text-transform: uppercase;
   margin-bottom: 25px;
-  width: 26vw;
 }
 
-.main{
+.o-section {
+  margin: 0 5vw;
+}
 
+
+.c-scrollbar {
+  z-index: 50;
+}
+.c-scrollbar_thumb {
+  background-color: #14cf93 !important;
+  opacity: 1 !important;
 }

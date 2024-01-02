@@ -13,4 +13,12 @@
       .c-title__row h2{
         font-size: 25rem;
       }
+
+      .c-t-a-info{
+        gap: 12vw;
+      }
+
+      .c-works hr {
+        margin: 12vh 0 11vh 14%;
+      }
 }
